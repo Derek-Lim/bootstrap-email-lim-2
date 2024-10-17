@@ -223,7 +223,7 @@
             <div class="col-3 text-secondary text-end">Sep 21</div>
             <div class="col-9 text-secondary text-truncate">Impression for Retainer</div>
             <div class="col-9 text-secondary text-truncate">Hi Derek, Have a good day and thank you. Liz Dental Specialist</div>
-            <div class="col-3 text-secondary text-end fs-3">☆</div>
+            <div class="col-3 text-primary text-end fs-3">★</div>
             <div class="col">
               <div class="row px-3 align-items-center gap-2">
                 <button class="col-4 btn btn btn-outline-secondary rounded-pill text-truncate">IMG_2293.HEIC</button>
@@ -327,6 +327,124 @@
       </div>
     </div>
   </section>
+
+  <!-- Compose Button -->
+  <div class="fixed-bottom py-5 m-5 text-end">
+    <button class="btn btn-light text-danger shadow rounded-pill p-3" data-bs-toggle="modal" data-bs-target="#compose">
+      <img src="pencil.png" alt="#" height="25">
+      <span>Compose</span>
+    </button>
+  </div>
+  <!-- Compose Button Modal -->
+  <div class="modal fade" id="compose">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Top Row -->
+              <div class="col-10">
+                <div class="row g-5">
+                  <img src="attachment-clip.png" alt="#" class="col-auto" height="30">
+                  <img src="message.png" alt="#" class="col-auto" height="30">
+                  <img src="ellipsis.png" alt="#" class="col-auto" height="30">
+                </div>
+              </div>
+              <button class="col-auto btn-close btn-lg" data-bs-dismiss="modal"></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <!-- Email Receiver -->
+            <div class="row">
+              <label for="recipient" class="col-auto text-secondary">To</label>
+              <input type="text" name="recipient" id="recipient" class="col border-0">
+              <img src="down-chevron.png" alt="#" height="20" class="col-auto">
+            </div>
+            <!-- Suggestions -->
+            <div class="row">
+              <div class="col-12 mt-3">
+                <span class="col-auto text-secondary">Suggestions</span>
+                <img src="info.png" alt="#" height="20" class="col-auto">
+              </div>
+              <!-- Suggestion 1 -->
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-auto pt-2 text-center">
+                    <button class="btn btn-lg btn-primary rounded-circle m-1 mb-2">S</button>
+                    <div class="text-truncate">SmilesOnZoom</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Suggestion 2 -->
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-auto pt-2 text-center">
+                    <button class="btn btn-lg btn-success rounded-circle m-1 mb-2">R</button>
+                    <div class="text-truncate">Remi Impressions</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Suggestion 3 -->
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-auto pt-2 text-center">
+                    <button class="btn btn-lg btn-secondary rounded-circle m-1 mb-2">R</button>
+                    <div class="text-truncate">Rosalyn R. Lee</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Suggestion 4 -->
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-auto pt-2 text-center">
+                    <button class="btn btn-lg btn-info rounded-circle m-1 mb-2">P</button>
+                    <div class="text-truncate">Pwint Nay Chi Mynit</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Suggestion 5 -->
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-auto pt-2 text-center">
+                    <button class="btn btn-lg btn-warning rounded-circle m-1 mb-2">B</button>
+                    <div class="text-truncate">Bay Valley Tech</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Suggestion 6 -->
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-auto pt-2 text-center">
+                    <button class="btn btn-lg btn-dark rounded-circle m-1 mb-2">Y</button>
+                    <div class="text-truncate">Yadira Telule Torres</div>
+                  </div>
+                </div>
+              </div>
+              <hr class="col-12 my-3">
+            </div>
+            <!-- Email Sender -->
+            <div class="row">
+              <label for="recipient" class="col-auto text-secondary">From</label>
+              <input type="text" name="recipient" id="recipient" class="border-0 col" value="dereklim3006@gmail.com">
+              <img src="down-chevron.png" alt="#" height="20" class="col-auto">
+              <hr class="col-12 my-3">
+            </div>
+            <!-- Email Title -->
+            <div class="row">
+              <input type="text" name="recipient" id="recipient" class="border-0 col" placeholder="Subject">
+              <hr class="col-12 my-3">
+            </div>
+            <!-- Email Content -->
+            <div class="row">
+              <textarea class="border-0" placeholder="Compose email"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-white shadow-lg p-3 fixed-bottom">
