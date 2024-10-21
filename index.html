@@ -10,8 +10,10 @@
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+  <!-- Small Screen Size -->
+
   <!-- Navbar -->
-  <nav class="navbar navbar-light bg-white m-3 shadow rounded">
+  <nav class="navbar navbar-light bg-white m-3 shadow rounded d-sm-none">
     <div class="container-fluid">
       <!-- Menu Icon -->
       <button class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
@@ -444,7 +446,7 @@
   </div>
 
   <!-- Email inbox -->
-  <section>
+  <section class="d-sm-none">
     <div class="container-fluid">
       <!-- Chosen Category -->
       <div class="row">
@@ -642,7 +644,7 @@
   </section>
 
   <!-- Compose Button -->
-  <div class="fixed-bottom py-5 m-5 text-end">
+  <div class="fixed-bottom py-5 m-5 text-end d-sm-none">
     <button class="btn btn-light text-danger shadow rounded-pill p-3" data-bs-toggle="modal" data-bs-target="#compose">
       <img src="pencil.png" alt="#" height="25">
       <span>Compose</span>
@@ -760,7 +762,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-white shadow-lg p-3 fixed-bottom">
+  <footer class="bg-white shadow-lg p-3 fixed-bottom d-sm-none">
     <div class="container">
       <div class="row">
         <div class="col text-center"><img src="email.png" alt="#" height="35"></div>
@@ -769,5 +771,50 @@
       </div>
     </div>
   </footer>
+
+  <!-- Medium Screen Size & Up -->
+
+  <!-- Navbar -->
+  <nav class="navbar-md navbar navbar-light bg-light rounded py-3">
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <!-- Menu Icon -->
+              <button class="col navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Gmail Icon -->
+              <img src="gmail.png" alt="#" height="35" class="col">
+              <span class="col fs-2 text-secondary ps-0 pe-5">Gmail</span>
+            </div>
+          </div>
+          <!-- Searchbar -->
+          <div class="col searchbar-md border-0 rounded-pill p-2 px-3 d-none d-md-block" type="search" placeholder="Search mail">
+            <div class="row align-items-center">
+              <img src="search-interface-symbol.png" alt="#" height="20" class="col-auto">
+              <span class="col text-secondary text-truncate p-0">Search mail</span>
+              <img src="settings.png" alt="#" height="20" class="col-auto">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <!-- Menu Items Right Side -->
+              <img src="search-interface-symbol.png" alt="#" height="25" class="col d-md-none">
+              <img src="question.png" alt="#" height="25" class="col ps-4">
+              <img src="setting.png" alt="#" height="25" class="col">
+              <img src="diamond-symbol.png" alt="#" height="25" class="col">
+              <img src="grid.png" alt="#" height="25" class="col">
+              <!-- Profile Icon -->
+              <div class="col">
+                <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#accountManagement2">D</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
