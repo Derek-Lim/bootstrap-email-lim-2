@@ -1,7 +1,30 @@
+.dropdown-item {
+  border-radius: 0 35px 35px 0;
+}
+
+.sidebar-primary-sm {
+  border-radius: 0 35px 35px 0;
+  background-color: #ffd6d7;
+}
+
 .navbar-md {
   min-width: 800px;
 }
 
 .searchbar-md {
   background-color: #e9eef6;
+}
+
+.compose-btn-md {
+  background-color: #c2e7ff;
+  border-radius: 15px;
+}
+
+.compose-btn-md:hover {
+  box-shadow: 0 0 10px;
+}
+
+.sidebar-inbox-md {
+  border-radius: 0 25px 25px 0;
+  background-color: #d3e3fd;
 }
