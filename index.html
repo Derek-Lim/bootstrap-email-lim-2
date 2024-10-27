@@ -22,7 +22,7 @@
       <!-- Searchbar -->
       <input class="border-0" type="search" placeholder="Search in mail">
       <!-- Profile Icon -->
-      <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#accountManagement">D</button>
+      <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#accountManagementSmall">D</button>
       <!-- Menu -->
       <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
         <!-- Menu Header -->
@@ -381,13 +381,19 @@
     </div>
   </nav>
   <!-- Profile Icon Modal -->
-  <div class="modal fade" id="accountManagement">
+  <div class="modal fade" id="accountManagementSmall">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <!-- Modal header --> 
         <div class="modal-header border-0 p-0 px-4">
-          <img src="social.png" alt="#" height="100">
-          <button class="btn-close" data-bs-dismiss="modal"></button>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col text-center ms-3">
+                <img src="social.png" alt="#" height="100">
+              </div>
+              <button class="col-auto btn-close" data-bs-dismiss="modal"></button>
+            </div>
+          </div>
         </div>
         <div class="modal-body">
           <!-- Modal content -->
@@ -808,7 +814,7 @@
               <img src="grid.png" alt="#" height="25" class="col">
               <!-- Profile Icon -->
               <div class="col">
-                <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#accountManagement2">D</button>
+                <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#accountManagementMedium">D</button>
               </div>
             </div>
           </div>
@@ -1059,7 +1065,8 @@
                     </div>
                   </div>
                 </li>
-              </ul>  
+              </ul>
+            </li>  
             <!-- Labels Heading -->
             <li class="mt-4">
               <div class="container">
@@ -1098,6 +1105,110 @@
       </div>
     </div>
   </nav>
+  <!-- Profile Icon Modal -->
+  <div class="modal fade" id="accountManagementMedium">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-light">
+        <!-- Modal header --> 
+        <div class="modal-header border-0 p-0 px-4">
+          <div class="container">
+            <div class="row py-4 align-items-center">
+              <div class="col text-center ms-4">dereklim3006@gmail.com</div>
+              <button class="col-auto btn-close" data-bs-dismiss="modal"></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <!-- Modal content -->
+          <div class="container">
+            <!-- Profile Icon -->
+            <div class="row">
+              <div class="col text-center">
+                <button class="btn btn-danger rounded-circle px-3 py-1 fs-1">D</button>
+              </div>
+            </div>
+            <!-- Hi, Derek! -->
+            <div class="row m-1">
+              <span class="col text-center fs-5">Hi, Derek!</span>
+            </div>
+            <!-- Manage your Google Account -->
+            <div class="row justify-content-center m-2">
+              <button class="col-auto btn btn-outline-dark text-primary rounded-pill">Manage your Google Account</button>
+            </div>
+            <!-- Show more accounts -->
+            <div class="row my-3">
+              <div class="col nav-item dropdown bg-white rounded-pill py-2">
+                <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                  <span class="text-dark">Show more accounts</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- Other account -->
+                  <li class="dropdown-item">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <span class="btn btn-sm btn-primary rounded-circle">D</span>
+                        </div>
+                        <div class="col">
+                          <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                              <a class="btn p-0">Derek Lim</a>
+                              <div class="text-secondary text-truncate">dereklim20@gmail.com</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <div class="dropdown-divider"></div>
+                  <!-- Add another account -->
+                  <li class="dropdown-item py-2">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <img src="add.png" alt="#" height="25">
+                        </div>
+                        <div class="col">Add another account</div>
+                      </div>
+                    </div>
+                  </li>
+                  <div class="dropdown-divider"></div>
+                  <!-- Sign out of all accounts -->
+                  <li class="dropdown-item py-2">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <img src="logout.png" alt="#" height="25">
+                        </div>
+                        <div class="col">
+                          <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                              <a class="btn p-0">Sign out of all accounts</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- GB Usage -->
+            <div class="row align-items-center p-1 px-2 bg-white rounded-pill py-3">
+              <img src="cloud.png" alt="#" height="25" class="col-auto">
+              <span class="col btn-sm ms-2 text-secondary">27% of 15 GB used</span>
+            </div>
+          </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer justify-content-center border-0 p-0">
+          <a href="#" class="nav-link text-secondary">Privacy Policy</a>
+          <span class="text-secondary fs-1">·</span>
+          <a href="#" class="nav-link text-secondary">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Email inbox -->
   <section class="inbox-md d-none d-sm-block">
