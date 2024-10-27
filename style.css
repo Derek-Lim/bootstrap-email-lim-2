@@ -15,7 +15,7 @@
 }
 
 .navbar-md {
-  min-width: 996px;
+  min-width: 957px;
 }
 
 .searchbar-md {
@@ -36,8 +36,12 @@
   background-color: #d3e3fd;
 }
 
+.body-md {
+  min-width: 957px;
+}
+
 .inbox-md {
-  min-width: 996px;
+  border-radius: 25px;
 }
 
 .inbox-checkbox-md {
@@ -47,4 +51,8 @@
 
 .footer-slider-md {
   width: 200px;
+}
+
+.account-management-modal-md {
+  border-radius: 40px;
 }
